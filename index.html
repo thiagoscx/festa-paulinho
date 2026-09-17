@@ -3,7 +3,7 @@
 <title>Paulinho 60</title>
 <style>body{margin:0;background:#120E0A;color:#F6F0E4;font:18px/1.4 -apple-system,system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;text-align:center;padding:24px}
 h1{font-size:44px;margin:0 0 8px}h1 span{color:#F2B33D}p{color:#B3A793;margin:6px 0}a{color:#F2B33D}</style></head>
-<body><div><h1>Paulinho <span>60</span></h1><p id="m">Abrindo o DJ...</p><p id="h" style="display:none">Conecta no Wi-Fi da festa (<b>TMG_Sítio</b>) e tenta de novo.<br><a id="l" href="#">tocar aqui pra tentar</a></p></div>
+<body><div><h1>Paulinho <span>60</span></h1><p id="m">Abrindo o DJ...</p><p id="h" style="display:none">Conecta no Wi-Fi da festa (<b>TMG Plan B</b>) e tenta de novo.<br><a id="l" href="#">tocar aqui pra tentar</a></p></div>
 <script>
 (async()=>{try{const r=await fetch("./ip.json?"+Date.now(),{cache:"no-store"});const d=await r.json();
  const url=`http://${d.ip}:${d.port||4060}/pedir`;document.getElementById("l").href=url;location.replace(url);
